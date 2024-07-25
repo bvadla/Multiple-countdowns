@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Countdown Timers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="countdown-container">
+        <h1>Set Multiple Countdowns</h1>
+        <div class="timer-set">
+            <input type="date" class="date-input" required>
+            <input type="time" class="time-input" required>
+            <button onclick="setCountdown(0)">Set Countdown</button>
+            <div class="timer-display">
+                <span class="days">00</span> days 
+                <span class="hours">00</span> hours 
+                <span class="minutes">00</span> minutes 
+                <span class="seconds">00</span> seconds
+            </div>
+        </div>
+        <div class="timer-set">
+            <input type="date" class="date-input" required>
+            <input type="time" class="time-input" required>
+            <button onclick="setCountdown(1)">Set Countdown</button>
+            <div class="timer-display">
+                <span class="days">00</span> days 
+                <span class="hours">00</span> hours 
+                <span class="minutes">00</span> minutes 
+                <span class="seconds">00</span> seconds
+            </div>
+        </div>
+        <!-- Add more timers as needed following the same structure -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
